@@ -8,17 +8,23 @@ void cabecalho(){
 	fflush(stdin);
 }
 int main(){
+	int i, soma;
+	float nota, media;
 	
-	float nota;
-	cabecalho();
+cabecalho();
+for(i=1;i<=2;i++){
+	
 do{
 
-	printf("Digite uma Nota: ");
+	printf("Digite a %iª Nota: ",i);
 	scanf("%f",&nota);
 }
 while(nota<0||nota>10);
-printf("Nota Informada: %.1f \n",nota);
 
+		soma=soma+nota;
+}
+		media=soma/2;
+		printf("Média: %.1f \n",media);
 return 0;
 
 }
